@@ -1,0 +1,30 @@
+---
+abstract: 'Sync configuration files across machines'
+author:
+  - 'Peter Shangov <pshangov@yahoo.com>'
+build_requires:
+  App::Cmd::Tester: 0
+  File::Find: 0
+  File::Slurp: 0
+  File::Temp: 0
+  Test::Differences: 0
+  Test::More: 0
+  Try::Tiny: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.102340, CPAN::Meta::Converter version 2.101670'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: App-Rcsync
+requires:
+  App::Cmd::Simple: 0
+  Carp: 0
+  Config::General: 0
+  Data::AsObject: 0
+  File::HomeDir: 0
+  File::Spec: 0
+  Template: 0
+version: 0.01
