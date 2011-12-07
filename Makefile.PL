@@ -4,43 +4,48 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Sync configuration files across machines',
-  'AUTHOR' => 'Peter Shangov <pshangov@yahoo.com>',
-  'BUILD_REQUIRES' => {
-    'App::Cmd::Tester' => '0',
-    'File::Find' => '0',
-    'File::Slurp' => '0',
-    'File::Temp' => '0',
-    'Test::Differences' => '0',
-    'Test::More' => '0',
-    'Try::Tiny' => '0'
+  "ABSTRACT" => "Sync configuration files across machines",
+  "AUTHOR" => "Peter Shangov <pshangov\@yahoo.com>",
+  "BUILD_REQUIRES" => {
+    "App::Cmd::Tester" => 0,
+    "File::Find" => 0,
+    "File::Slurp" => 0,
+    "File::Spec" => 0,
+    "File::Temp" => 0,
+    "Test::Differences" => 0,
+    "Test::More" => 0,
+    "Try::Tiny" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'App-Rcsync',
-  'EXE_FILES' => [
-    'bin/rcsync'
+  "DISTNAME" => "App-Rcsync",
+  "EXE_FILES" => [
+    "bin/rcsync"
   ],
-  'LICENSE' => 'perl',
-  'NAME' => 'App::Rcsync',
-  'PREREQ_PM' => {
-    'App::Cmd::Simple' => '0',
-    'Carp' => '0',
-    'Config::General' => '0',
-    'Data::AsObject' => '0',
-    'File::HomeDir' => '0',
-    'File::Spec' => '0',
-    'Template' => '0'
+  "LICENSE" => "perl",
+  "NAME" => "App::Rcsync",
+  "PREREQ_PM" => {
+    "App::Cmd::Simple" => 0,
+    "Config::General" => 0,
+    "File::Copy" => 0,
+    "File::HomeDir" => 0,
+    "File::Path" => 0,
+    "Path::Class" => 0,
+    "Ref::Explicit" => 0,
+    "Template" => 0,
+    "base" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.01',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.02",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
